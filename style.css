@@ -1,0 +1,61 @@
+/* Custom styles and enhancements for Subway Surfers Mod Portal */
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #090d16;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #1e293b;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #334155;
+}
+
+/* Theater Mode Styles */
+body.theater-mode {
+    overflow: hidden;
+}
+
+body.theater-mode #game-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    max-width: 100vw !important;
+    max-height: 100vh !important;
+    border-radius: 0;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+}
+
+body.theater-mode #game-stage {
+    flex-grow: 1;
+    height: auto !important;
+    aspect-ratio: auto !important;
+}
+
+/* Subtle glow animations */
+@keyframes pulseSlow {
+    0%, 100% { opacity: 0.15; transform: scale(1); }
+    50% { opacity: 0.25; transform: scale(1.05); }
+}
+
+.animate-glow-slow {
+    animation: pulseSlow 8s ease-in-out infinite;
+}
+
+/* Kbd styling */
+kbd {
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+}
+

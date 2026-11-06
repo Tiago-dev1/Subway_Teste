@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subway Surfers Modded Max | Jogue Online com Tudo Desbloqueado</title>
+    <meta name="description"
+        content="Jogue Subway Surfers Modded online no navegador com chaves infinitas, moedas ilimitadas, todas as skins e pranchas liberadas no estilo Morrowplay.">
+    <meta name="theme-color" content="#facc15">
+
+    <!-- Google Fonts: Inter & Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS (Play CDN com plugins) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        dark: {
+                            950: '#090d16',
+                            900: '#0f172a',
+                            850: '#131d35',
+                            800: '#1e293b',
+                            700: '#334155'
+                        },
+                        brand: {
+                            gold: '#facc15',
+                            goldHover: '#eab308',
+                            cyan: '#06b6d4',
+                            emerald: '#10b981',
+                            purple: '#a855f7'
+                        }
+                    },
+                    fontFamily: {
+                        heading: ['Outfit', 'sans-serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif']
+                    },
+                    boxShadow: {
+                        'neon-gold': '0 0 25px -5px rgba(250, 204, 21, 0.45)',
+                        'neon-cyan': '0 0 25px -5px rgba(6, 182, 212, 0.45)',
+                        'neon-emerald': '0 0 25px -5px rgba(16, 185, 129, 0.45)'
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body
+    class="bg-dark-950 text-slate-100 font-sans selection:bg-brand-gold selection:text-dark-950 min-h-screen flex flex-col antialiased">
+
+    <!-- Background Glow Accents -->
+    <div class="fixed inset-0 pointer-events-none overflow-hidden z-0">
+        <div
+            class="absolute -top-40 left-1/2 -translate-x-1/2 w-[700px] h-[500px] bg-brand-gold/10 blur-[130px] rounded-full">
+        </div>
+        <div class="absolute top-[40%] -left-32 w-[500px] h-[500px] bg-brand-cyan/10 blur-[140px] rounded-full"></div>
+        <div class="absolute top-[70%] -right-32 w-[600px] h-[600px] bg-brand-purple/10 blur-[150px] rounded-full">
+        </div>
+    </div>
+
+    <!-- Top Navigation Bar -->
+    <header class="sticky top-0 z-40 backdrop-blur-md bg-dark-950/80 border-b border-dark-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="#" class="flex items-center gap-3 group">
+                <div
+                    class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-gold to-yellow-300 p-0.5 shadow-neon-gold group-hover:scale-105 transition-transform duration-300">
+                    <div
+                        class="w-full h-full bg-dark-950 rounded-[10px] flex items-center justify-center font-heading font-black text-brand-gold text-lg">
+                        SS
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <span
+                        class="font-heading font-black tracking-wide text-lg text-white leading-tight flex items-center gap-1.5">
+                        SUBWAY SURFERS <span
+                            class="text-xs px-2 py-0.5 rounded-full bg-brand-gold/20 text-brand-gold font-bold tracking-wider border border-brand-gold/30">MAX
+                            MOD</span>
+                    </span>
+                    <span class="text-[11px] text-slate-400 font-medium">Estilo Morrowplay • Edição Tudo Liberado</span>
+                </div>
+            </a>
+
+            <!-- Navigation Links (Desktop) -->
+            <nav class="hidden md:flex items-center gap-1 lg:gap-2">
+                <a href="#game-section"
+                    class="px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 hover:text-brand-gold hover:bg-dark-900 transition">Jogar
+                    Agora</a>
+                <a href="#features-section"
+                    class="px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-400 hover:text-slate-100 hover:bg-dark-900 transition">Modificações</a>
+                <a href="#download-section"
+                    class="px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-400 hover:text-slate-100 hover:bg-dark-900 transition">Download
+                    APK</a>
+                <a href="#faq-section"
+                    class="px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-400 hover:text-slate-100 hover:bg-dark-900 transition">FAQ</a>
+            </nav>
+
+            <!-- Actions / Status -->
+            <div class="flex items-center gap-3">
+                <div
+                    class="hidden sm:flex items-center gap-2 px-3 py-1 rounded-full bg-dark-900 border border-dark-800 text-xs">
+                    <span class="relative flex h-2 w-2">
+                        <span
+                            class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+                    </span>
+                    <span class="text-slate-300 font-medium">Servidores Ativos</span>
+                </div>
+                <a href="#download-section"
+                    class="inline-flex items-center gap-2 bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-400 hover:to-emerald-500 text-dark-950 font-bold px-4 py-2 rounded-xl text-xs sm:text-sm shadow-neon-emerald transition-all duration-200 hover:scale-[1.02]">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                            d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                    </svg>
+                    <span>Baixar APK</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow z-10 relative">
+
+        <!-- Hero Section -->
+        <section class="pt-8 pb-6 px-4 text-center">
+            <div class="max-w-4xl mx-auto">
+                <div
+                    class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-gold/10 border border-brand-gold/30 text-brand-gold text-xs font-semibold mb-4 animate-pulse">
+                    <span>⚡ Edição Especial World Tour Desbloqueada</span>
+                </div>
+                <h1
+                    class="font-heading font-black text-3xl sm:text-5xl lg:text-6xl text-white tracking-tight leading-tight">
+                    Subway Surfers <span
+                        class="bg-gradient-to-r from-brand-gold via-yellow-300 to-amber-500 bg-clip-text text-transparent">Tudo
+                        Infinito</span>
+                </h1>
+                <p class="mt-3 text-slate-300 text-base sm:text-lg max-w-2xl mx-auto">
+                    Jogue direto pelo navegador sem instalar nada ou baixe o APK para Android. Chaves ilimitadas, moedas
+                    infinitas e todas as skins liberadas instantaneamente!
+                </p>
+
+                <!-- Quick Action Buttons -->
+                <div class="mt-6 flex flex-wrap items-center justify-center gap-3">
+                    <a href="#game-section"
+                        class="bg-brand-gold hover:bg-brand-goldHover text-dark-950 font-heading font-extrabold px-6 py-3 rounded-xl text-base shadow-neon-gold hover:scale-105 transition-all duration-200 flex items-center gap-2">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M8 5v14l11-7z" />
+                        </svg>
+                        Jogar no Navegador
+                    </a>
+                    <a href="#download-section"
+                        class="bg-dark-900 hover:bg-dark-850 text-slate-200 hover:text-white border border-dark-700 font-semibold px-6 py-3 rounded-xl text-base hover:scale-105 transition-all duration-200 flex items-center gap-2">
+                        <svg class="w-5 h-5 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+                        </svg>
+                        Baixar Mod APK Android
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Game Area -->
+        <section id="game-section" class="py-4 px-2 sm:px-4 lg:px-8">
+            <div id="game-wrapper"
+                class="max-w-5xl mx-auto bg-dark-900 border border-dark-800 rounded-2xl overflow-hidden shadow-2xl transition-all duration-300">
+
+                <!-- Game Control Bar Header -->
+                <div
+                    class="bg-dark-850 px-4 py-3 border-b border-dark-800 flex flex-wrap items-center justify-between gap-3">
+                    <div class="flex items-center gap-3">
+                        <div class="flex items-center gap-1.5">
+                            <span class="w-3 h-3 rounded-full bg-red-500/80 inline-block"></span>
+                            <span class="w-3 h-3 rounded-full bg-yellow-500/80 inline-block"></span>
+                            <span class="w-3 h-3 rounded-full bg-green-500/80 inline-block"></span>
+                        </div>
+                        <span class="h-4 w-px bg-dark-700 hidden sm:inline-block"></span>
+
+                        <!-- Version / Server Selector -->
+                        <div class="flex items-center gap-2">
+                            <label for="server-select"
+                                class="text-xs text-slate-400 font-medium hidden sm:inline">Servidor:</label>
+                            <select id="server-select"
+                                class="bg-dark-950 border border-dark-700 text-xs sm:text-sm text-slate-200 rounded-lg px-2.5 py-1.5 focus:outline-none focus:border-brand-gold cursor-pointer">
+                                <option value="https://dddavit.github.io/subway/">🇷🇺 World Tour: St. Petersburg (Unity
+                                    WebGL - Oficial)</option>
+                                <option value="https://adhithyaarun.github.io/subway_surfers/">⚡ Edição 3D Canvas (Super
+                                    Rápida)</option>
+                                <option
+                                    value="https://sz-games.github.io/games/game.html?game=https://dddavit.github.io/subway/">
+                                    🌐 Servidor Reserva (SZ Games Mirror)</option>
+                                <option value="custom">⚙️ URL Personalizada...</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Stage Controls (Fullscreen, Theater, Reload, Open External) -->
+                    <div class="flex items-center gap-1.5 sm:gap-2">
+                        <a id="btn-external" href="https://dddavit.github.io/subway/" target="_blank"
+                            rel="noopener noreferrer" title="Abrir em Nova Aba (Sem Bloqueios)"
+                            class="p-2 rounded-lg bg-dark-950 hover:bg-dark-800 text-slate-300 hover:text-brand-gold border border-dark-700/80 transition flex items-center gap-1 text-xs font-semibold">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14">
+                                </path>
+                            </svg>
+                            <span class="hidden md:inline">Nova Aba</span>
+                        </a>
+                        <button id="btn-reload" title="Recarregar Jogo"
+                            class="p-2 rounded-lg bg-dark-950 hover:bg-dark-800 text-slate-300 hover:text-brand-gold border border-dark-700/80 transition">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15">
+                                </path>
+                            </svg>
+                        </button>
+                        <button id="btn-theater" title="Modo Cinema"
+                            class="p-2 rounded-lg bg-dark-950 hover:bg-dark-800 text-slate-300 hover:text-brand-cyan border border-dark-700/80 transition">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 18h16"></path>
+                            </svg>
+                        </button>
+                        <button id="btn-fullscreen"
+                            class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-brand-gold/10 hover:bg-brand-gold text-brand-gold hover:text-dark-950 border border-brand-gold/30 font-bold text-xs transition-all">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4">
+                                </path>
+                            </svg>
+                            <span>Tela Cheia</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Custom URL input modal/bar (Hidden by default) -->
+                <div id="custom-url-bar"
+                    class="hidden bg-dark-950 px-4 py-2 border-b border-dark-800 flex items-center gap-2">
+                    <input id="custom-url-input" type="text"
+                        placeholder="Cole o link direto do WebGL ou iframe (ex: https://...)"
+                        class="flex-grow bg-dark-900 border border-dark-700 text-xs text-slate-200 px-3 py-1.5 rounded-lg focus:outline-none focus:border-brand-gold">
+                    <button id="btn-apply-url"
+                        class="bg-brand-gold text-dark-950 text-xs font-bold px-3 py-1.5 rounded-lg hover:bg-brand-goldHover">Carregar</button>
+                </div>
+
+                <!-- Game Container -->
+                <div id="game-stage" class="relative w-full aspect-[4/3] sm:aspect-[16/10] md:h-[620px] bg-black">
+                    <!-- Loading overlay -->
+                    <div id="game-loader"
+                        class="absolute inset-0 bg-dark-950/90 z-20 flex flex-col items-center justify-center p-4">
+                        <div
+                            class="w-12 h-12 border-4 border-brand-gold/20 border-t-brand-gold rounded-full animate-spin mb-4">
+                        </div>
+                        <h3 class="text-base sm:text-lg font-heading font-bold text-white">Carregando Subway Surfers
+                            WebGL...</h3>
+                        <p class="text-xs sm:text-sm text-slate-400 mt-1 max-w-sm text-center">Clique uma vez na tela do
+                            jogo após carregar para ativar os controles de teclado.</p>
+                        <div class="mt-4 flex items-center gap-2">
+                            <button id="btn-skip-loader"
+                                class="text-xs text-brand-gold hover:underline bg-dark-900 px-3 py-1.5 rounded border border-dark-700">Entrar
+                                no Jogo Direto</button>
+                        </div>
+                    </div>
+
+                    <!-- The Game Iframe -->
+                    <iframe id="game-frame" src="https://dddavit.github.io/subway/" class="w-full h-full border-0"
+                        allowfullscreen="true" allow="autoplay; fullscreen; gamepad; encrypted-media" scrolling="no"
+                        loading="eager">
+                    </iframe>
+                </div>
+
+                <!-- Game Controls & HUD Footer -->
+                <div
+                    class="bg-dark-850 px-4 py-3 border-t border-dark-800 flex flex-wrap items-center justify-between gap-4 text-xs">
+                    <div class="flex items-center gap-2 text-slate-400">
+                        <span class="font-bold text-slate-200 uppercase tracking-wider text-[10px]">Controles:</span>
+                        <div class="flex items-center gap-1.5">
+                            <kbd
+                                class="px-2 py-0.5 rounded bg-dark-950 border border-dark-700 text-brand-gold font-mono font-bold">W</kbd>
+                            <kbd
+                                class="px-2 py-0.5 rounded bg-dark-950 border border-dark-700 text-brand-gold font-mono font-bold">A</kbd>
+                            <kbd
+                                class="px-2 py-0.5 rounded bg-dark-950 border border-dark-700 text-brand-gold font-mono font-bold">S</kbd>
+                            <kbd
+                                class="px-2 py-0.5 rounded bg-dark-950 border border-dark-700 text-brand-gold font-mono font-bold">D</kbd>
+                            <span class="text-slate-500">ou</span>
+                            <span class="text-slate-300">Setas</span>
+                            <span class="text-slate-500">•</span>
+                            <kbd
+                                class="px-2.5 py-0.5 rounded bg-dark-950 border border-dark-700 text-brand-cyan font-mono font-bold">Espaço</kbd>
+                            <span class="text-slate-300">Prancha</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-3 text-slate-400">
+                        <span class="flex items-center gap-1 text-emerald-400">
+                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Save Automático Ativo
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Grid Section -->
+        <section id="features-section" class="py-16 px-4 max-w-6xl mx-auto">
+            <div class="text-center mb-12">
+                <span
+                    class="text-xs font-bold text-brand-gold tracking-widest uppercase bg-brand-gold/10 px-3 py-1 rounded-full border border-brand-gold/20">Vantagens
+                    & Recursos</span>
+                <h2 class="font-heading font-black text-2xl sm:text-4xl text-white mt-3">Tudo o Que Vem Desbloqueado
+                </h2>
+                <p class="text-slate-400 text-sm sm:text-base mt-2 max-w-xl mx-auto">Essa edição traz todas as regalias
+                    do Subway Surfers Max para você curtir a corrida definitiva sem limites.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Feature Card 1 -->
+                <div
+                    class="p-6 rounded-2xl bg-dark-900 border border-dark-800 hover:border-brand-gold/50 transition-all duration-300 hover:-translate-y-1 group">
+                    <div
+                        class="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition-transform">
+                        🔑
+                    </div>
+                    <h3 class="font-heading font-bold text-lg text-white group-hover:text-brand-gold transition-colors">
+                        Chaves Infinitas</h3>
+                    <p class="text-slate-400 text-sm mt-2 leading-relaxed">
+                        Nunca mais perca seu recorde! Reviva quantas vezes quiser instantaneamente e abra todas as
+                        caixas misteriosas disponíveis.
+                    </p>
+                </div>
+
+                <!-- Feature Card 2 -->
+                <div
+                    class="p-6 rounded-2xl bg-dark-900 border border-dark-800 hover:border-brand-gold/50 transition-all duration-300 hover:-translate-y-1 group">
+                    <div
+                        class="w-12 h-12 rounded-xl bg-yellow-500/10 border border-yellow-500/30 flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition-transform">
+                        🪙
+                    </div>
+                    <h3 class="font-heading font-bold text-lg text-white group-hover:text-brand-gold transition-colors">
+                        Moedas Ilimitadas</h3>
+                    <p class="text-slate-400 text-sm mt-2 leading-relaxed">
+                        Saldo máximo de 999.999.999 moedas na sua conta. Evolua todos os power-ups (ímã, jetpack, tênis
+                        de pulo) no nível máximo.
+                    </p>
+                </div>
+
+                <!-- Feature Card 3 -->
+                <div
+                    class="p-6 rounded-2xl bg-dark-900 border border-dark-800 hover:border-brand-gold/50 transition-all duration-300 hover:-translate-y-1 group">
+                    <div
+                        class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition-transform">
+                        🛹
+                    </div>
+                    <h3 class="font-heading font-bold text-lg text-white group-hover:text-brand-gold transition-colors">
+                        Todas as Pranchas Liberadas</h3>
+                    <p class="text-slate-400 text-sm mt-2 leading-relaxed">
+                        Pranchas com pulo duplo, teletransporte, super velocidade e rastro especial. Acesso livre às
+                        pranchas lendárias e sazonais.
+                    </p>
+                </div>
+
+                <!-- Feature Card 4 -->
+                <div
+                    class="p-6 rounded-2xl bg-dark-900 border border-dark-800 hover:border-brand-gold/50 transition-all duration-300 hover:-translate-y-1 group">
+                    <div
+                        class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/30 flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition-transform">
+                        🏃‍♂️
+                    </div>
+                    <h3 class="font-heading font-bold text-lg text-white group-hover:text-brand-gold transition-colors">
+                        Personagens World Tour</h3>
+                    <p class="text-slate-400 text-sm mt-2 leading-relaxed">
+                        Jogue com Zombie Jake, Prince K, Lucy, Ninja, Tagbot e todos os heróis exclusivos de Tóquio,
+                        Paris, Havana e Berlim.
+                    </p>
+                </div>
+
+                <!-- Feature Card 5 -->
+                <div
+                    class="p-6 rounded-2xl bg-dark-900 border border-dark-800 hover:border-brand-gold/50 transition-all duration-300 hover:-translate-y-1 group">
+                    <div
+                        class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition-transform">
+                        ⚡
+                    </div>
+                    <h3 class="font-heading font-bold text-lg text-white group-hover:text-brand-gold transition-colors">
+                        Multiplicador Máximo 30x</h3>
+                    <p class="text-slate-400 text-sm mt-2 leading-relaxed">
+                        Comece a corrida já com o multiplicador de score no teto para disputar o topo da tabela de
+                        pontuação com seus amigos.
+                    </p>
+                </div>
+
+                <!-- Feature Card 6 -->
+                <div
+                    class="p-6 rounded-2xl bg-dark-900 border border-dark-800 hover:border-brand-gold/50 transition-all duration-300 hover:-translate-y-1 group">
+                    <div
+                        class="w-12 h-12 rounded-xl bg-rose-500/10 border border-rose-500/30 flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition-transform">
+                        🛡️
+                    </div>
+                    <h3 class="font-heading font-bold text-lg text-white group-hover:text-brand-gold transition-colors">
+                        Seguro e Sem Cadastro</h3>
+                    <p class="text-slate-400 text-sm mt-2 leading-relaxed">
+                        Não pedimos senhas nem dados pessoais. Jogue em um ambiente seguro, direto na nuvem ou baixando
+                        mods verificados.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Download APK Section for Android -->
+        <section id="download-section" class="py-16 px-4 bg-dark-900/50 border-y border-dark-800/80">
+            <div class="max-w-5xl mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+
+                    <div class="lg:col-span-7">
+                        <span
+                            class="text-xs font-bold text-emerald-400 tracking-wider uppercase bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/20">Para
+                            Celular Android</span>
+                        <h2 class="font-heading font-black text-2xl sm:text-4xl text-white mt-3">Baixe o Subway Surfers
+                            Mod APK Atualizado</h2>
+                        <p class="text-slate-300 text-sm sm:text-base mt-3 leading-relaxed">
+                            Prefere jogar no celular? Disponibilizamos links diretos e verificados de servidores
+                            parceiros reconhecidos pela comunidade (como LiteAPKs e AN1) para você instalar o Mod Menu
+                            completo no seu smartphone.
+                        </p>
+
+                        <!-- Highlights List -->
+                        <ul class="mt-6 space-y-3">
+                            <li class="flex items-center gap-3 text-sm text-slate-300">
+                                <span
+                                    class="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-xs">✓</span>
+                                Menu Flutuante (Ativa/Desativa trapaças quando quiser)
+                            </li>
+                            <li class="flex items-center gap-3 text-sm text-slate-300">
+                                <span
+                                    class="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-xs">✓</span>
+                                Sem necessidade de Root no Android
+                            </li>
+                            <li class="flex items-center gap-3 text-sm text-slate-300">
+                                <span
+                                    class="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-xs">✓</span>
+                                Totalmente compatível com Android 8.0 até 14+
+                            </li>
+                        </ul>
+
+                        <!-- Download Buttons Group -->
+                        <div class="mt-8 flex flex-wrap items-center gap-3">
+                            <a href="https://liteapks.com/subway-surfers.html" target="_blank" rel="noopener noreferrer"
+                                class="bg-emerald-500 hover:bg-emerald-400 text-dark-950 font-heading font-bold px-6 py-3 rounded-xl text-sm shadow-neon-emerald transition-all duration-200 hover:scale-105 flex items-center gap-2">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                        d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                                </svg>
+                                <span>Opção 1: Download LiteAPKs (Recomendado)</span>
+                            </a>
+                            <a href="https://an1.com/2641-subway-surfers-mod.html" target="_blank"
+                                rel="noopener noreferrer"
+                                class="bg-dark-850 hover:bg-dark-800 text-slate-200 border border-dark-700 font-semibold px-5 py-3 rounded-xl text-sm hover:scale-105 transition-all duration-200 flex items-center gap-2">
+                                <span>Opção 2: Espelho AN1</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Steps Card -->
+                    <div class="lg:col-span-5 bg-dark-950 p-6 rounded-2xl border border-dark-800 shadow-xl">
+                        <h3 class="font-heading font-bold text-base text-white mb-4 flex items-center gap-2">
+                            <span class="text-brand-gold text-lg">📲</span> Como Instalar no Celular
+                        </h3>
+                        <ol class="space-y-4 text-xs sm:text-sm text-slate-300">
+                            <li class="flex items-start gap-3">
+                                <span
+                                    class="w-6 h-6 rounded-lg bg-dark-800 text-brand-gold flex items-center justify-center font-bold shrink-0">1</span>
+                                <div>
+                                    <strong class="text-white block font-semibold">Baixe o APK</strong>
+                                    Clique no botão de download acima e aguarde o arquivo ser baixado.
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span
+                                    class="w-6 h-6 rounded-lg bg-dark-800 text-brand-gold flex items-center justify-center font-bold shrink-0">2</span>
+                                <div>
+                                    <strong class="text-white block font-semibold">Ative Fontes Desconhecidas</strong>
+                                    Vá em Configurações &gt; Segurança e autorize instalar apps de fora da Play Store.
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span
+                                    class="w-6 h-6 rounded-lg bg-dark-800 text-brand-gold flex items-center justify-center font-bold shrink-0">3</span>
+                                <div>
+                                    <strong class="text-white block font-semibold">Abra e Divirta-se</strong>
+                                    Abra o Subway Surfers instalado e configure os recursos no Mod Menu flutuante!
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq-section" class="py-16 px-4 max-w-4xl mx-auto">
+            <div class="text-center mb-10">
+                <span
+                    class="text-xs font-bold text-brand-cyan tracking-widest uppercase bg-brand-cyan/10 px-3 py-1 rounded-full border border-brand-cyan/20">Suporte
+                    & Dúvidas</span>
+                <h2 class="font-heading font-black text-2xl sm:text-3xl text-white mt-3">Perguntas Frequentes (FAQ)</h2>
+            </div>
+
+            <div class="space-y-3">
+                <details class="group bg-dark-900 border border-dark-800 rounded-xl p-4 transition-all">
+                    <summary
+                        class="font-heading font-bold text-sm sm:text-base text-slate-200 cursor-pointer list-none flex justify-between items-center group-hover:text-brand-gold">
+                        <span>O jogo online salva meu progresso e pontuações?</span>
+                        <span class="text-slate-400 group-open:rotate-180 transition-transform">▼</span>
+                    </summary>
+                    <p class="mt-3 text-xs sm:text-sm text-slate-400 leading-relaxed">
+                        Sim! A versão WebGL utiliza o IndexedDB e LocalStorage do seu navegador para guardar suas
+                        moedas, chaves e personagens desbloqueados na mesma máquina. Não limpe o cache do navegador para
+                        não perder suas marcas.
+                    </p>
+                </details>
+
+                <details class="group bg-dark-900 border border-dark-800 rounded-xl p-4 transition-all">
+                    <summary
+                        class="font-heading font-bold text-sm sm:text-base text-slate-200 cursor-pointer list-none flex justify-between items-center group-hover:text-brand-gold">
+                        <span>Como jogar em tela cheia com máxima performance?</span>
+                        <span
+                            class="text-slate-200 cursor-pointer list-none flex justify-between items-center group-hover:text-brand-gold">
+                            <span class="text-slate-400 group-open:rotate-180 transition-transform">▼</span>
+                        </span>
+                    </summary>
+                    <p class="mt-3 text-xs sm:text-sm text-slate-400 leading-relaxed">
+                        Basta clicar no botão amarelo <strong>"Tela Cheia"</strong> no topo da janela do jogo. Para sair
+                        da tela cheia a qualquer momento, aperte a tecla <kbd
+                            class="px-1 py-0.5 rounded bg-dark-950 border border-dark-700">ESC</kbd>.
+                    </p>
+                </details>
+
+                <details class="group bg-dark-900 border border-dark-800 rounded-xl p-4 transition-all">
+                    <summary
+                        class="font-heading font-bold text-sm sm:text-base text-slate-200 cursor-pointer list-none flex justify-between items-center group-hover:text-brand-gold">
+                        <span>A tela do jogo ficou preta ou não carrega, o que fazer?</span>
+                        <span class="text-slate-400 group-open:rotate-180 transition-transform">▼</span>
+                    </summary>
+                    <p class="mt-3 text-xs sm:text-sm text-slate-400 leading-relaxed">
+                        Alguns bloqueadores de anúncios muito agressivos ou extensões de firewall podem bloquear o
+                        carregamento do WebGL. Tente pausar o AdBlock para este site, clique no botão de recarregar
+                        (ícone de seta circular) ou troque a cidade no menu seletor (ex: trocar de Zurich para San
+                        Francisco).
+                    </p>
+                </details>
+
+                <details class="group bg-dark-900 border border-dark-800 rounded-xl p-4 transition-all">
+                    <summary
+                        class="font-heading font-bold text-sm sm:text-base text-slate-200 cursor-pointer list-none flex justify-between items-center group-hover:text-brand-gold">
+                        <span>Como hospedar esse site de graça na Vercel ou Netlify?</span>
+                        <span class="text-slate-400 group-open:rotate-180 transition-transform">▼</span>
+                    </summary>
+                    <p class="mt-3 text-xs sm:text-sm text-slate-400 leading-relaxed">
+                        Este projeto foi desenvolvido em arquitetura 100% estática (HTML5, Tailwind e JS). Basta subir
+                        esta pasta para um repositório no GitHub e conectar na <a href="https://vercel.com"
+                            target="_blank" class="text-brand-cyan underline">Vercel</a> ou <a
+                            href="https://netlify.com" target="_blank" class="text-brand-cyan underline">Netlify</a> com
+                        1 clique para ganhar um link HTTPS gratuito e permanente!
+                    </p>
+                </details>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer & Legal Disclaimer -->
+    <footer class="bg-dark-950 border-t border-dark-800/80 pt-10 pb-8 px-4 text-xs text-slate-400 z-10 relative">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6 pb-8 border-b border-dark-800">
+                <div class="flex items-center gap-3">
+                    <div
+                        class="w-8 h-8 rounded-lg bg-brand-gold/10 border border-brand-gold/30 flex items-center justify-center font-heading font-bold text-brand-gold">
+                        SS
+                    </div>
+                    <span class="font-heading font-bold text-slate-200 text-sm">Subway Surfers Max Mod Portal</span>
+                </div>
+                <div class="flex items-center gap-6">
+                    <a href="#game-section" class="hover:text-brand-gold transition">Jogar</a>
+                    <a href="#features-section" class="hover:text-brand-gold transition">Recursos</a>
+                    <a href="#download-section" class="hover:text-brand-gold transition">Download APK</a>
+                    <a href="#faq-section" class="hover:text-brand-gold transition">Ajuda</a>
+                </div>
+            </div>
+
+            <!-- Mandatory Legal Disclaimer -->
+            <div
+                class="mt-8 bg-dark-900/60 p-4 rounded-xl border border-dark-800 text-[11px] leading-relaxed text-slate-400">
+                <p class="font-bold text-slate-300 mb-1 flex items-center gap-1.5">
+                    <svg class="w-4 h-4 text-amber-400 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z">
+                        </path>
+                    </svg>
+                    Aviso Legal &amp; Direitos Autorais (Fan-Made Notice)
+                </p>
+                <p>
+                    Subway Surfers é uma marca registrada de seus respectivos desenvolvedores e detentores de
+                    propriedade intelectual: <strong>SYBO Games</strong> e <strong>Kiloo Games</strong>. Este website é
+                    um projeto de fã (fan-made), criado unicamente para fins recreativos, educacionais e de demonstração
+                    tecnológica. Não possuímos vínculo, patrocínio ou afiliação oficial com a SYBO Games. Não coletamos
+                    credenciais, senhas, cartões de crédito ou dados sensíveis de usuários. Todas as marcas e imagens
+                    mencionadas pertencem aos seus legítimos titulares.
+                </p>
+            </div>
+
+            <div class="mt-6 text-center text-slate-400 text-[11px]">
+                Desenvolvido com foco em alta performance e experiência do usuário • © 2026 Comunidade Modded
+            </div>
+        </div>
+    </footer>
+
+    <!-- App Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>
